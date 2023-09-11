@@ -6,11 +6,10 @@ if game.PlaceId == 648362523 then
 	repeat wait() until game:IsLoaded()
 	game.StarterGui:SetCore(
 	"SendNotification", {
-	Title = "Warning",
-	Text = "This script only works in the original BP game.",
+	Title = "Warning ⚠",
+	Text = "This script only works in the BP version made by Bluecage!",
 	Duration = 4
 })
-	wait(4)
 	game.StarterGui:SetCore(
 	"SendNotification", {
 	Title = "BP Inf Credits",
