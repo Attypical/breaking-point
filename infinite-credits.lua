@@ -3,7 +3,6 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 
 if game.PlaceId == 648362523 then
-  player:Kick("not working")
 	repeat wait() until game:IsLoaded()
 	game.StarterGui:SetCore(
 	"SendNotification", {
@@ -15,7 +14,7 @@ if game.PlaceId == 648362523 then
 	game.StarterGui:SetCore(
 	"SendNotification", {
 	Title = "BP Inf Credits",
-	Text = "Made by Atypical (@attypical, discord)",
+	Text = "Made by Atypical (@attypical on discord)",
 	Duration = 10
 })
 
@@ -25,7 +24,7 @@ if game.PlaceId == 648362523 then
 	game.Players.LocalPlayer.settings["Display Gun"].Value = true
 	game.Players.LocalPlayer.CharacterAdded:Connect(
 		function()
-			if getgenv().AutoFarm then
+			if getgenv().Enabled then
 				pcall(function()
 					game.Players.LocalPlayer.settings["Display Gun"].Value = true
 					wait(4)
@@ -37,7 +36,7 @@ if game.PlaceId == 648362523 then
 		end
 	)
 
-	while getgenv().AutoFarm do
+	while getgenv().Enabled do
 		pcall(function()
 			game:GetService("ReplicatedStorage").RemoteEvent:FireServer(16, "public")
 		end)
@@ -56,7 +55,7 @@ else
 end
 
 
-if getgenv().ServerHop == true then
+if getgenv().Hop == true then
 	wait (1500)
 	game:GetService("TeleportService"):Teleport(648362523, LocalPlayer)
 end
