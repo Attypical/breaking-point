@@ -6,11 +6,11 @@ if game.PlaceId == 648362523 then
 	repeat wait() until game:IsLoaded()
 	game.StarterGui:SetCore(
 	"SendNotification", {
-	Title = "Checking code...",
-	Text = "Here's a dog while you wait: 🐶",
-	Duration = 3
+	Title = "Warning",
+	Text = "This script only works in the original BP game.",
+	Duration = 4
 })
-	wait(3)
+	wait(4)
 	game.StarterGui:SetCore(
 	"SendNotification", {
 	Title = "BP Inf Credits",
