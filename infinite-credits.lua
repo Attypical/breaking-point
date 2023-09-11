@@ -55,7 +55,7 @@ else
 end
 
 
-if getgenv().Hop == true then
+if getgenv().SHop == true then
 	wait (1500)
 	game:GetService("TeleportService"):Teleport(648362523, LocalPlayer)
 end
