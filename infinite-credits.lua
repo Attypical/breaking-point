@@ -8,16 +8,16 @@ if game.PlaceId == 648362523 then
 	repeat wait() until game:IsLoaded()
 	game.StarterGui:SetCore(
 	"SendNotification", {
-	Title = "Script has succesfully loaded!",
-	Text = "Starting...",
+	Title = "Code has been checked!",
+	Text = "Script is fully up and working.",
 	Duration = 3
 })
 	wait(4)
 	game.StarterGui:SetCore(
 	"SendNotification", {
 	Title = "BP Inf Credits",
-	Text = "Made by Atypical.",
-	Duration = 1500
+	Text = "Made by 𝐀𝐭𝐲𝐩𝐢𝐜𝐚𝐥.",
+	Duration = 30
 })
 
 	Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
