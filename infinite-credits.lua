@@ -1,3 +1,5 @@
+setclipboard("contact: @attypical on discord, double check if its me: 1007589335471771748.")
+
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 	game:GetService("VirtualUser"):ClickButton2(Vector2.new())
 end)
@@ -6,15 +8,16 @@ if game.PlaceId == 648362523 then
 	repeat wait() until game:IsLoaded()
 	game.StarterGui:SetCore(
 	"SendNotification", {
-	Title = "Warning ⚠",
-	Text = "This script only works in the BP version made by Bluecage!",
-	Duration = 4
+	Title = "Script has succesfully loaded!",
+	Text = "Starting...",
+	Duration = 3
 })
+	wait(4)
 	game.StarterGui:SetCore(
 	"SendNotification", {
 	Title = "BP Inf Credits",
-	Text = "Made by Atypical (@attypical on discord)",
-	Duration = 10
+	Text = "Made by Atypical.",
+	Duration = 1500
 })
 
 	Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
