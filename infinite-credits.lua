@@ -1,3 +1,17 @@
+local RS = game:GetService("ReplicatedStorage")
+if RS:FindFirstChild("ALREADYRUNNING") == nil then
+local part = instance.new("Part")
+part.Name = "ALREADYRUNNING"
+part.Parent = RS
+--your code here
+endlocal RS = game:GetService("ReplicatedStorage")
+if RS:FindFirstChild("ALREADYRUNNING") == nil then
+local part = instance.new("Part")
+part.Name = "ALREADYRUNNING"
+part.Parent = RS
+--your code here
+end
+
 setclipboard("contact: @attypical on discord, double check if its me: 1007589335471771748.")
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
