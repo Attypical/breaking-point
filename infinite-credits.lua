@@ -6,14 +6,16 @@ end)
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
  game.StarterGui:SetCore(
-	"SendNotification", {
+	"SendNotification",
+{
 	Title = "Warning! ⚠",
 	Text = "This is only functional in the BP game made by Bluecage.",
 	Duration = 5
 }
 	wait(5)
 	game.StarterGui:SetCore(
-	"SendNotification", {
+	"SendNotification", 
+{
 	Title = "BP Inf Credits",
 	Text = "Made by 𝐀𝐭𝐲𝐩𝐢𝐜𝐚𝐥.",
 	Duration = 30
