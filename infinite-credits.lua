@@ -20,7 +20,8 @@ if game.PlaceId == 648362523 then
 	Title = "BP Inf Credits",
 	Text = "Made by 𝐀𝐭𝐲𝐩𝐢𝐜𝐚𝐥.",
 	Duration = 30
-			}
+}
+		)
       
     Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
