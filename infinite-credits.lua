@@ -1,4 +1,5 @@
 setclipboard("Infinite Credits script, made by the one and only Atypical. For contact, you can find me on discord @attypical")
+
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 game:GetService("VirtualUser"):ClickButton2(Vector2.new())
 end)
