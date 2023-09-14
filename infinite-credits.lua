@@ -1,8 +1,3 @@
-local RS = game:GetService("ReplicatedStorage")
-if RS:FindFirstChild("ALREADYRUNNING") == nil then
-local part = instance.new("Part")
-part.Name = "ALREADYRUNNING"
-part.Parent = RS
 setclipboard("Infinite Credits script, made by the one and only Atypical. For contact, you can find me on discord @attypical")
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -111,5 +106,4 @@ end
 if getgenv().ServerHop == true then
 wait (1500)
 game:GetService("TeleportService"):Teleport(648362523, LocalPlayer)
-end
 end
