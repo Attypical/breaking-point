@@ -1,3 +1,4 @@
+getgenv().ScriptEnabled = true
 if getgenv().ExecutedTwice then
     return game:GetService("Players").LocalPlayer:Kick("Don't execute script twice; Note: If you're having trouble with the script, you can find my contact info in your clipboard.")
 end
