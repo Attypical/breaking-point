@@ -1,4 +1,4 @@
-setclipboard("Infinite Credits script, made by the one and only Atypical. For contact, you can find me on discord @attypical")
+setclipboard("Infinite Credits script, made by the one and only Atypical; For contact, you can find me on discord @attypical; Please note that the script only works on the original version of Breaking Point.")
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 game:GetService("VirtualUser"):ClickButton2(Vector2.new())
@@ -6,12 +6,13 @@ end)
 
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
-     game.StarterGui:SetCore(
+    game.StarterGui:SetCore(
         "SendNotification",
         {
-            Title = "Warning! ⚠",
-            Text = "Only functions properly on the BP version made by Bluecage."
+            Title = "BP Infinite Credits",
+            Text = "Made by Atypical."
         }
+    )
       
     Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
