@@ -6,22 +6,12 @@ end)
 
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
- game.StarterGui:SetCore(
-	"SendNotification",
-{
-	Title = "Warning! ⚠",
-	Text = "This is only functional in the BP game made by Bluecage.",
-	Duration = 5
-}
-	wait(5)
-	game.StarterGui:SetCore(
-	"SendNotification", 
-{
-	Title = "BP Inf Credits",
-	Text = "Made by 𝐀𝐭𝐲𝐩𝐢𝐜𝐚𝐥.",
-	Duration = 30
-}
-		)
+     game.StarterGui:SetCore(
+        "SendNotification",
+        {
+            Title = "Warning! ⚠",
+            Text = "Only functions properly on the BP version made by Bluecage."
+        }
       
     Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
