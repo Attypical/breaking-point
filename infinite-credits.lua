@@ -1,6 +1,6 @@
 getgenv().ScriptEnabled = true
 if getgenv().ExecutedTwice then
-    return game:GetService("Players").LocalPlayer:Kick("Don't execute script twice; Note: If you're having trouble with the script, you can find my contact info in your clipboard.")
+    return game:GetService("Players").LocalPlayer:Kick("Don't execute script twice.")
 end
 
 getgenv().ExecutedTwice = true
@@ -13,15 +13,29 @@ end)
 
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
+   local bindable = Instance.new("BindableFunction") -- create a local bindable function
+
+bindable.OnInvoke = function()
+    game.ReplicatedStorage.RemoteFunction:InvokeServer("button") -- create a remote function for this
+end
+
     game.StarterGui:SetCore(
+        "SendNotification",
+        {
+            Title = "Note",
+            Text = "You can find my contact info in your clipboard."
+        }
+    )
+    wait(1)
+        game.StarterGui:SetCore(
         "SendNotification",
         {
             Title = "BP Infinite Credits",
             Text = "Made by Atypical."
-            Duration = 6969
         }
     )
-      
+    
+
     Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
     Clone.Parent = game:GetService("Players").LocalPlayer.Character
