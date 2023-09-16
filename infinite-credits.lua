@@ -1,41 +1,37 @@
+--test
 getgenv().ScriptEnabled = true
+getgenv().ServerHop = false
+--exec twice
 if getgenv().ExecutedTwice then
-    return game:GetService("Players").LocalPlayer:Kick("Don't execute script twice.")
+    return game:GetService("Players").LocalPlayer:Kick("Don't execute this script twice.")
 end
 
 getgenv().ExecutedTwice = true
-
-setclipboard("Infinite Credits script, made by the one and only Atypical; For contact, you can find me on discord @attypical")
+--kick if not in og bp
+if game.PlaceId ~= 648362523 then
+        return game:GetService("Players").LocalPlayer:Kick("The Infinite Credits script made by Atypical only functions correctly in the original BP game, which is why it's disabled amongst other copies.")
+end
+-- code
+setclipboard("You can only find me on discord, @attypical; Double check if it's me: 1007589335471771748")
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 game:GetService("VirtualUser"):ClickButton2(Vector2.new())
 end)
-
+-- can change
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
-   local bindable = Instance.new("BindableFunction") -- create a local bindable function
-
-bindable.OnInvoke = function()
-    game.ReplicatedStorage.RemoteFunction:InvokeServer("button") -- create a remote function for this
-end
-
-    game.StarterGui:SetCore(
-        "SendNotification",
-        {
-            Title = "Note",
-            Text = "You can find my contact info in your clipboard."
-        }
-    )
-    wait(1)
-        game.StarterGui:SetCore(
-        "SendNotification",
-        {
-            Title = "BP Infinite Credits",
-            Text = "Made by Atypical."
-        }
-    )
-    
-
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Contact info is in your clipboard!", -- Required
+	Text = "This script is completely free to use. Sending a kind message supports me a lot!", -- Required
+	Duration = 5 -- Optional
+})
+wait(5)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "BP Infinite Credits", -- Required
+	Text = "Made by Atypical.", -- Required
+	Duration = 30 -- Optional
+})
+      --dont change, or do idk
     Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
     game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
     Clone.Parent = game:GetService("Players").LocalPlayer.Character
@@ -76,3 +72,10 @@ if getgenv().ServerHop == true then
 wait (1500)
 game:GetService("TeleportService"):Teleport(648362523, LocalPlayer)
 end
+
+wait(1200)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Please rejoin the game.", -- Required
+	Text = "The script will stop functioning at its max potential after the 20 minute mark.", -- Required
+	Duration = 696969 -- Optional
+})
