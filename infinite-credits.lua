@@ -1,5 +1,5 @@
 if getgenv().ExecutedTwice then
-    return game:GetService("Players").LocalPlayer:Kick("Don't execute this script twice.")
+    return game:GetService("Players").LocalPlayer:Kick("Don't execute twice.")
 end
 
 getgenv().ExecutedTwice = true
