@@ -1,3 +1,5 @@
+getgenv().Enabled = true
+getgenv().ServerHop = false
 if getgenv().ExecutedTwice then
     return game:GetService("Players").LocalPlayer:Kick("Don't execute twice.")
 end
