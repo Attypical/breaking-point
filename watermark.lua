@@ -25,7 +25,7 @@ TextLabel.Font = Enum.Font.Oswald
 TextLabel.Text = "Atypical's BP Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 48.000
-TextLabel.TextTransparency = 0.850
+TextLabel.TextTransparency = 0.91
 
 
 local function VIHHIRW_fake_script() 
