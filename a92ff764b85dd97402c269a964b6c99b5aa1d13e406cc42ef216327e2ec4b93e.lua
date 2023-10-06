@@ -147,5 +147,5 @@ end)
 
 
 tab:Toggle("Reset Hitbox",false, function(t)
-lib:Notification("Warning", "You can't reset this, so please click "Leave Game" within Atypical's Hub.", "Ok")
+lib:Notification("Warning", "You can't reset this, so please click Leave Game within Atypical's Hub.", "Ok")
 end)
