@@ -1,11 +1,14 @@
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt"))()
 
 local win = lib:Window("MADE BY ATYPICAL MADE BY ATYPICAL MADE BY ATYPICAL MADE BY ATYPICAL",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("Hitbox Extender")
 
-tab:Label("You can't select both normal & invisible options!")
-tab:Label("Rejoin to select a different one.")
+local tab2 = win:Tab("Information")
+
+tab2:Label("You can't select both normal & invisible options!")
+tab2:Label("Rejoin to select a different one.")
+tab2:Label("I can assure you that this will NEVER be detected.")
 
 tab:Dropdown("Legit",{"Head","Torso","InvisHead","InvisTorso"}, function(pick)
     selectedOption = pick
