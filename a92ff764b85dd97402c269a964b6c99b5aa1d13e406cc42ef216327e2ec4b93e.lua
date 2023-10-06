@@ -146,24 +146,6 @@ end
 end)
 
 
-tab:Toggle("Reset Torso",false, function(t)
-game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.ImageLabel.TextLabel.Text = "Successfully reset! This isn't accurate, so please rejoin for a more accurate reset."
-game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.Visible = true
-_G.HumanoidRootPartSize = 1.8;
-_G.Disabled = true;
-game:GetService("RunService").RenderStepped:connect(function()
-	if _G.Disabled then
-		for i, v in next, game:GetService("Players"):GetPlayers() do
-			if (v.Name ~= game:GetService("Players").LocalPlayer.Name) then
-				pcall(function()
-					v.Character.HumanoidRootPart.Size = Vector3.new(_G.HumanoidRootPartSize, _G.HumanoidRootPartSize, _G.HumanoidRootPartSize);
-					v.Character.HumanoidRootPart.Transparency = 1;
-					v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue");
-					v.Character.HumanoidRootPart.Material = "Neon";
-					v.Character.HumanoidRootPart.CanCollide = false;
-				end);
-			end
-		end
-	end
-end)
+tab:Toggle("Reset Hitbox",false, function(t)
+lib:Notification("Warning", "You can't reset this, so please click "Leave Game" within Atypical's Hub.", "Ok")
 end)
