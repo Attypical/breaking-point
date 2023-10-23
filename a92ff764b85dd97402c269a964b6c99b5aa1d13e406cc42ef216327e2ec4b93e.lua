@@ -7,8 +7,9 @@ local tab = win:Tab("Hitbox Extender")
 local tab2 = win:Tab("Information")
 
 tab2:Label("You can't select both normal & invisible options!")
-tab2:Label("Rejoin to select a different one.")
-tab2:Label("Trust me, this will NEVER be detected.")
+tab2:Label("This will NEVER be detected. Unlike Buster's")
+tab2:Label("This came with Atypical's Hub which is FREE.")
+tab2:Label("If you bought it, you got scammed :(")
 
 tab:Dropdown("Legit",{"Head","Torso","InvisHead","InvisTorso"}, function(pick)
     selectedOption = pick
