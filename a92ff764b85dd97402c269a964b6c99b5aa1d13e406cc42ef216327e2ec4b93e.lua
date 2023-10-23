@@ -104,7 +104,7 @@ tab:Dropdown("Blatant",{"Head","Torso"}, function(pick)
     if selectedOption == "Head" then
 game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.ImageLabel.TextLabel.Text = "Succesfully applied Head HBE!"
 game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.Visible = true
-_G.HeadSize = 4.5;
+_G.HeadSize = 4;
 _G.Disabled = true;
 game:GetService("RunService").RenderStepped:connect(function()
 	if _G.Disabled then
