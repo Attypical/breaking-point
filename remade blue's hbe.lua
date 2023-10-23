@@ -7,9 +7,9 @@ local tab = win:Tab("Hitbox Extender")
 local tab2 = win:Tab("Information")
 
 tab2:Label("You can't select both normal & invisible options!")
-tab2:Label("This will NEVER be detected. Unlike Buster's")
-tab2:Label("Head hitbox expander only works on the def head.")
-tab2:Label("This is basically unfixable :(")
+tab2:Label("This will NEVER be detected. Unlike Buster...")
+tab2:Label("Head visuals only appear on the def head;")
+tab2:Label("HBE works on all heads, though.")
 
 tab:Dropdown("Legit",{"Head","Torso","InvisHead","InvisTorso"}, function(pick)
     selectedOption = pick
