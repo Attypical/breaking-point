@@ -8,7 +8,7 @@ local tab2 = win:Tab("Information")
 
 tab2:Label("You can't select both normal & invisible options!")
 tab2:Label("Rejoin to select a different one.")
-tab2:Label("I can assure you that this will NEVER be detected.")
+tab2:Label("Trust me, this will NEVER be detected.")
 
 tab:Dropdown("Legit",{"Head","Torso","InvisHead","InvisTorso"}, function(pick)
     selectedOption = pick
@@ -104,7 +104,7 @@ tab:Dropdown("Blatant",{"Head","Torso"}, function(pick)
     if selectedOption == "Head" then
 game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.ImageLabel.TextLabel.Text = "Succesfully applied Head HBE!"
 game.Players.LocalPlayer.PlayerGui.ScreenGui.msgbox.Visible = true
-_G.HeadSize = 5;
+_G.HeadSize = 4.5;
 _G.Disabled = true;
 game:GetService("RunService").RenderStepped:connect(function()
 	if _G.Disabled then
